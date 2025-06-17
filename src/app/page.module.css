@@ -4,7 +4,7 @@
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
   --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --button-secondary-hover: #e8f3ff;
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
@@ -30,8 +30,14 @@
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 32px;
   grid-row-start: 2;
+  background-color: whitesmoke;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .main ol {
@@ -68,10 +74,6 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -96,6 +98,11 @@ a.secondary {
   grid-row-start: 3;
   display: flex;
   gap: 24px;
+  background-color: whitesmoke;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .footer a {
@@ -116,7 +123,7 @@ a.secondary {
   }
 
   a.secondary:hover {
-    background: var(--button-secondary-hover);
+    background: var(--button-primary-hover);
     border-color: transparent;
   }
 
@@ -158,11 +165,5 @@ a.secondary {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
   }
 }
