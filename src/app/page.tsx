@@ -1,13 +1,27 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      {/* This background is a flickering grid effect */}
+      <FlickeringGrid
+        className="absolute inset-0 z-[-1]"
+        squareSize={4}
+        gridGap={6}
+        color="#60A5FA"
+        maxOpacity={0.5}
+        flickerChance={0.1}
+        height={1000}
+        width={2000}
+      />
+
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src="/tailwind.png"
           alt="Next.js logo"
           width={180}
           height={38}
@@ -44,6 +58,20 @@ export default function Home() {
           >
             Read our docs
           </a>
+          <Link
+            href="/shad"
+            rel="noopener noreferrer"
+            className={styles.secondary}
+          >
+            shad ui
+          </Link>
+          <Link
+            href="/magic"
+            rel="noopener noreferrer"
+            className={styles.secondary}
+          >
+            magic ui
+          </Link>
         </div>
       </main>
       <footer className={styles.footer}>
