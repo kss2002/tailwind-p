@@ -78,7 +78,21 @@ export default function Home() {
       </main>
       <footer className={styles.footer}>
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://github.com/kss2002/tailwind-p"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/github.svg"
+            alt="File icon"
+            width={16}
+            height={16}
+          />
+          github
+        </a>
+        <a
+          href="https://tailwindcss.com/docs/installation/using-vite"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -89,7 +103,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          TailWind Learn
         </a>
         <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
