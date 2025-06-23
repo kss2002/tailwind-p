@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import Link from "next/link";
 
+// 메인 페이지 컴포넌트
 export default function Home() {
   return (
     <div className={styles.page}>
