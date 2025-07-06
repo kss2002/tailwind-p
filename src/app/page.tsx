@@ -7,7 +7,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
-      {/* This background is a flickering grid effect */}
       <FlickeringGrid
         className="absolute inset-0 z-[-1]"
         squareSize={4}
